@@ -1,2 +1,0 @@
-#执行下述脚本训练并测试模型,训练的哪个数据集在train.py中可调整，超参数在configs.py中可调整
-python train.py
