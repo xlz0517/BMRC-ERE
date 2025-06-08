@@ -1,0 +1,37 @@
+1、训练和测试
+#执行下述脚本训练并测试模型,训练的哪个数据集在train.py中可调整，超参数在configs.py中可调整
+```
+python train.py
+```
+
+2、环境说明
+操作系统->Ubuntu20.4
+Pyhton 版本 ->Python3.8
+CUDA 版本 ->CUDA10.1
+深度学习框架-> Pytorch1.7.1
+Transformer-> 4.2.0
+tqmd->最新版本即可
+numpy->最新版本即可
+
+3、文件说明
+/datasets/bert：存放预训练语言模型及其相关配置文件
+/datasets/data：存放数据集
+/encoder/bert_encoder.py：编码器脚本代码文件
+/framework/dataloaders.py：数据预处理脚本
+/framework/optimation.py：优化器封装将本
+/framework/triple_re.py：框架封装脚本
+/models/layers.py：通用神经网络层封装脚本
+/models/MRC4RE：模型脚本
+configs.py：参数配置文件脚本
+train.py：训练模型入口脚本
+utils.py：工具类脚本
+
+4、如何下载bert
+git clone https://huggingface.co/bert-base-cased
+git clone https://huggingface.co/bert-base-uncased
+
+cd bert-base-cased
+git lfs pull
+cd ..
+cd bert-base-uncased
+git lfs pull
